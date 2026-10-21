@@ -15,14 +15,3 @@ def average_value1_by_type(rows):
         averages[typ] = sums[typ] / counts[typ]
 
     return averages
-
-if __name__ == "__main__":
-    import csv
-
-    with open("data/points.csv", encoding="utf-8", newline="") as file:
-        rows = list(csv.DictReader(file))
-
-    averages = average_value1_by_type(rows)
-
-    for typ, average in sorted(averages.items()):
-        print(f"{typ} {average:.2f}")

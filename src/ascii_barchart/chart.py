@@ -29,12 +29,3 @@ def render_bar_chart(values):
         console.print(line)
 
 
-if __name__ == "__main__":
-    values = [
-        ("A", 2.16),
-        ("B", 4.33),
-        ("C", 6.57),
-        ("D", 8.71),
-    ]
-
-    render_bar_chart(values)
